@@ -21,7 +21,6 @@
             --colorepulsante2: rgb(36, 36, 36);
             --borderradius: 125px;
             --colorea: rgb(55, 53, 54);
-
         }
 
         body {
@@ -40,13 +39,15 @@
         a,
         .copy-email,
         .copy-copy,
-        .cv {
+        .cv,
+        .targhetta {
             font-size: 13px;
         }
 
         .copy-copy,
         .cv,
-        a {
+        a,
+        .targhetta {
             font-weight: 600;
         }
 
@@ -56,10 +57,7 @@
         }
 
         .hero {
-            position: relative;
-            z-index: 1;
             background-color: var(--coloresfondo1);
-            width: 100%;
             border: 1px solid var(--colorebordi);
             border-bottom-left-radius: var(--borderradius);
             border-bottom-right-radius: var(--borderradius);
@@ -106,33 +104,11 @@
             cursor: pointer;
         }
 
-        /* .copy-copy-hidden {
-            background-color: var(--colorepulsante1);
-            border-radius: 40px;
-            cursor: pointer;
-            position: absolute;
-            padding: 13px 15px;
-            right: 3px;
-            filter: opacity(0%);
-        }
-
-        input[type="checkbox"] {
-            display: none;
-        }
-
-        input[name="check-close"]:checked ~ .copy-copy-hidden {
-            filter: opacity(100%);
-        }
-
-        input[name="check-close"]:checked ~ .copy-copy-hidden {
-            filter: opacity(0%);
-        } */
-
         .cont-informazioni {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 90px 0px 150px 0px;
+            margin: 90px 0px 100px 0px;
         }
 
         .cont-foto {
@@ -177,6 +153,7 @@
         .titolo {
             text-align: center;
             font-size: 40px;
+            line-height: 55px;
             margin: 30px 0px;
         }
 
@@ -212,7 +189,6 @@
             top: -101px;
             overflow: hidden;
             height: 394px;
-            margin: 0px 0px 50px 0px;
             border: 1px solid var(--colorebordi);
             border-top: none;
             border-bottom-left-radius: var(--borderradius);
@@ -220,7 +196,7 @@
         }
 
         .boximmagini-carosello {
-            margin: 145px 0px 0px 0px;
+            margin: 160px 0px 0px 0px;
             display: flex;
             align-items: center;
             gap: 100px;
@@ -235,16 +211,13 @@
             <div class="cont-contatti">
                 <div class="cont-copy">
                     <span class="copy-email">vincentvig-na@gmail.it</span>
-                    <span for="check-open" class="copy-copy">Copy</span>
-                    <!-- <input type="checkbox" name="check-open" id="check-open">
-                    <input type="checkbox" name="check-close" id="check-close">
-                    <label for="check-close" class="copy-copy-hidden">Copied!</label> -->
+                    <span class="copy-copy">Copy</span>
                 </div>
                 <div class="con-cv">
                     <span class="cv">CV</span>
                 </div>
             </div>
-            <div class="social">
+            <div>
                 <a href="https://www.facebook.com/" target="_blank">Facebook</a> /
                 <a href="https://www.instagram.com/" target="_blank">Instagram</a> /
                 <a href="https://www.tiktok.com/it-IT" target="_blank">Tik Tok</a>
@@ -270,6 +243,58 @@
             <img src="immagini/national-bank-of-canada-logo-wine.webp" alt="logo national bank of canada">
             <img src="immagini/subway-logo.webp" alt="logo subway-logo">
         </div>
+    </div>
+    <div class="continformazioni-aggiuntive">
+        <h2 class="titolo-informazioni-aggiuntive">Collaborate with brands and agencies to <br> create impactful
+            results.</h2>
+        <hr class="divisione-informazioni">
+        <span class="targhetta">Services</span>
+        <div class="cont-servizi">
+            <div class="servizi">
+                <img class="immagine-servizi" src="immagini/ui.png" alt="icona ui ux">
+                <h3 class="titolo-servizi">UX & UI</h3>
+                <p class="descrizione-servizi">Designing interfaces that are intuitive, efficient, and enjoyable to use.
+                </p>
+            </div>
+            <div class="servizi">
+                <img class="immagine-servizi" src="immagini/app-settings.png" alt="icona app settings">
+                <h3 class="titolo-servizi">Web & Mobile App</h3>
+                <p class="descrizione-servizi">Transforming ideas into exceptional web and mobile app experiences.</p>
+            </div>
+            <div class="servizi">
+                <img class="immagine-servizi" src="immagini/sketch.png" alt="icona sketch">
+                <h3 class="titolo-servizi">Design & Creative</h3>
+                <p class="descrizione-servizi">Crafting visually stunning designs that connect with your audience.</p>
+            </div>
+            <div class="servizi">
+                <img class="immagine-servizi" src="immagini/app-development64.png" alt="icona app development">
+                <h3 class="titolo-servizi">Development</h3>
+                <p class="descrizione-servizi">Bringing your vision to life with the latest technology and design
+                    trends.</p>
+            </div>
+        </div>
+    </div>
+    <div class="cont-lavoriamo-insieme">
+        <img class="immagine-lavoriamo-assieme" src="immagini/support.png" alt="icona support">
+        <h2 class="raccontami">Tell me about your next <br> project</h2>
+        <div class="cont-contatti2">
+            <div class="cont-email">
+                <a class="email" href="mailto:cic@hotmail.it"><img src="immagini/gmail16.png" alt="icona email">Email
+                    Me</a>
+            </div>
+            <div class="cont-wtp">
+                <a class="wtp" href="https://web.whatsapp.com/" target="_blank"><img src="immagini/whatsapp16.png"
+                        alt="icona whatsapp">WhatsApp</a>
+            </div>
+        </div>
+        <footer>
+            <span class="copyright">© 2024 All rights reserved.</span>
+            <div>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a> /
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a> /
+                <a href="https://www.tiktok.com/it-IT" target="_blank">Tik Tok</a>
+            </div>
+        </footer>
     </div>
     <link rel="stylesheet" href="style/style.css">
 </body>

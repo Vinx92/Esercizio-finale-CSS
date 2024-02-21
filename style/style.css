@@ -1,0 +1,124 @@
+:root {
+  --coloresfondo1: rgb(241, 240, 238);
+  --coloresfondo2: rgb(251, 251, 251);
+  --colorebordi: rgb(236, 235, 233);
+  --colorepulsante1: rgb(255, 255, 253);
+  --colorepulsante2: rgb(36, 36, 36);
+  --borderradius: 125px;
+  --colorea: rgb(55, 53, 54);
+}
+
+.continformazioni-aggiuntive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+.titolo-informazioni-aggiuntive {
+  text-align: center;
+  font-size: 30px;
+  line-height: 55px;
+  margin-bottom: 60px;
+}
+
+.divisione-informazioni {
+  border: 1px solid var(--colorebordi);
+  width: 100%;
+}
+
+.targhetta {
+  position: relative;
+  top: -39px;
+  background-color: var(--colorepulsante1);
+  padding: 20px 30px;
+  border-radius: 40px;
+  transform: rotate(346deg);
+}
+
+.cont-servizi {
+  display: flex;
+}
+
+.servizi {
+  padding: 45px;
+}
+
+.immagine-servizi {
+  width: 50px;
+}
+
+.titolo-servizi {
+  font-size: 15px;
+}
+
+.descrizione-servizi {
+  font-size: 12px;
+}
+
+.cont-lavoriamo-insieme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--coloresfondo2);
+  border-top-left-radius: var(--borderradius);
+  border-top-right-radius: var(--borderradius);
+  border: 1px solid var(--colorebordi);
+  margin-top: 60px;
+}
+
+.raccontami {
+  font-size: 50px;
+  text-align: center;
+}
+
+.immagine-lavoriamo-assieme {
+  background: linear-gradient(to bottom, #c1c1c1 0%, #ffffff 100%);
+  border: 1px solid var(--colorebordi);
+  border-radius: 60%;
+  padding: 40px;
+  margin-top: 90px;
+}
+
+footer {
+  width: 70%;
+  height: 100px;
+  margin-top: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--colorebordi);
+}
+
+.cont-contatti2 {
+  display: flex;
+  gap: 25px;
+}
+
+.cont-email,
+.cont-wtp {
+  background-color: var(--coloresfondo1);
+  border: 1px solid var(--colorebordi);
+  border-radius: 40px;
+  height: 53px;
+  padding: 0px 3px;
+  display: flex;
+  align-items: center;
+}
+
+.email,
+.wtp {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 32px;
+  background-color: var(--colorepulsante1);
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.email {
+    background-color: var(--colorepulsante2);
+    color: white;
+}
