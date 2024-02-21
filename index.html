@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="immagini/profile16.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Vincent Vig-na</title>
+
+    <style>
+        :root {
+            --coloresfondo1: rgb(241, 240, 238);
+            --coloresfondo2: rgb(251, 251, 251);
+            --colorebordi: rgb(236, 235, 233);
+            --colorepulsante1: rgb(255, 255, 253);
+            --colorepulsante2: rgb(36, 36, 36);
+            --borderradius: 125px;
+            --colorea: rgb(55, 53, 54);
+
+        }
+
+        body {
+            margin: 0;
+            font-family: "DM Mono", monospace;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        a {
+            color: var(--colorea);
+            text-decoration: none;
+        }
+
+        a,
+        .copy-email,
+        .copy-copy,
+        .cv {
+            font-size: 13px;
+        }
+
+        .copy-copy,
+        .cv,
+        a {
+            font-weight: 600;
+        }
+
+        a:hover,
+        .cv:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-color: var(--coloresfondo1);
+            background-color: var(--coloresfondo1);
+            position: absolute;
+            width: 100%;
+            border-bottom-left-radius: var(--borderradius);
+            border-bottom-right-radius: var(--borderradius);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 40px 100px;
+        }
+
+        .cont-contatti {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .cont-copy {
+            display: flex;
+            border: 1px solid var(--colorebordi);
+            border-radius: 40px;
+            height: 53px;
+            align-items: center;
+            gap: 15px;
+            padding: 0px 4px;
+            position: relative;
+        }
+
+        .con-cv {
+            border: 1px solid var(--colorebordi);
+            border-radius: 40px;
+            height: 53px;
+            padding: 0px 4px;
+            display: flex;
+            align-items: center;
+        }
+
+        .copy-copy,
+        .cv {
+            padding: 15px 32px;
+            background-color: var(--colorepulsante1);
+            border-radius: 40px;
+            cursor: pointer;
+        }
+
+        /* .copy-copy-hidden {
+            background-color: var(--colorepulsante1);
+            border-radius: 40px;
+            cursor: pointer;
+            position: absolute;
+            padding: 13px 15px;
+            right: 3px;
+            filter: opacity(0%);
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[name="check-close"]:checked ~ .copy-copy-hidden {
+            filter: opacity(100%);
+        }
+
+        input[name="check-close"]:checked ~ .copy-copy-hidden {
+            filter: opacity(0%);
+        } */
+
+        .cont-informazioni {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 90px 0px 150px 0px;
+        }
+
+        .cont-foto {
+            position: relative;
+        }
+
+        .foto {
+            padding: 3px;
+            background-color: var(--colorepulsante1);
+            border-radius: 87px;
+            border: solid 1px var(--colorebordi);
+        }
+
+        @keyframes nomeanimato {
+            0% {
+                bottom: 80px;
+            }
+
+            50% {
+                bottom: 54px;
+            }
+
+            100% {
+                bottom: 80px;
+            }
+
+        }
+
+        .animazione {
+            position: absolute;
+            width: 149px;
+            background-color: var(--colorepulsante1);
+            padding: 15px 20px;
+            border-radius: 50px;
+            left: 110px;
+            bottom: 80px;
+            transform: rotate(344deg);
+            animation: nomeanimato 3.5s linear infinite;
+            font-size: 13px;
+        }
+
+        .titolo {
+            text-align: center;
+            font-size: 40px;
+            margin: 30px 0px;
+        }
+
+        .ultimiarrivi {
+            background-color: var(--colorepulsante2);
+            color: white;
+            padding: 20px 40px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <header>
+            <div class="cont-contatti">
+                <div class="cont-copy">
+                    <span class="copy-email">vincentvig-na@gmail.it</span>
+                    <span for="check-open" class="copy-copy">Copy</span>
+                    <!-- <input type="checkbox" name="check-open" id="check-open">
+                    <input type="checkbox" name="check-close" id="check-close">
+                    <label for="check-close" class="copy-copy-hidden">Copied!</label> -->
+                </div>
+                <div class="con-cv">
+                    <span class="cv">CV</span>
+                </div>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a> /
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a> /
+                <a href="https://www.tiktok.com/it-IT" target="_blank">Tik Tok</a>
+            </div>
+        </header>
+        <div class="cont-informazioni">
+            <div class="cont-foto">
+                <img class="foto" src="immagini/profile128.png" alt="icona user">
+                <span class="animazione">Vincent Vig-naim <img src="immagini/ciao.png"
+                        alt="icona mano che saluta"></span>
+            </div>
+            <h1 class="titolo">Building digital <br> products, brands, and <br> experience.</h1>
+            <a class="ultimiarrivi" href="https://www.instagram.com/">Latest Shots <img src="immagini/external-link.png"
+                    alt="icona link esterno"></a>
+        </div>
+    </div>
+    <link rel="stylesheet" href="style/style.css">
+</body>
+
+</html>
