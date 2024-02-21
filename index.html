@@ -29,6 +29,7 @@
             font-family: "DM Mono", monospace;
             font-weight: 300;
             font-style: normal;
+            background-color: var(--coloresfondo1);
         }
 
         a {
@@ -55,10 +56,11 @@
         }
 
         .hero {
+            position: relative;
+            z-index: 1;
             background-color: var(--coloresfondo1);
-            background-color: var(--coloresfondo1);
-            position: absolute;
             width: 100%;
+            border: 1px solid var(--colorebordi);
             border-bottom-left-radius: var(--borderradius);
             border-bottom-right-radius: var(--borderradius);
         }
@@ -73,7 +75,7 @@
         .cont-contatti {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 10px;
         }
 
         .cont-copy {
@@ -187,6 +189,43 @@
             align-items: center;
             gap: 10px;
         }
+
+        @keyframes animazionecarosello {
+            0% {
+                transform: translateX(5px);
+            }
+
+            50% {
+                transform: translateX(-300px);
+            }
+
+            100% {
+                transform: translateX(5px);
+            }
+
+        }
+
+        .carosello {
+            z-index: -1;
+            background-color: var(--coloresfondo2);
+            position: relative;
+            top: -101px;
+            overflow: hidden;
+            height: 394px;
+            margin: 0px 0px 50px 0px;
+            border: 1px solid var(--colorebordi);
+            border-top: none;
+            border-bottom-left-radius: var(--borderradius);
+            border-bottom-right-radius: var(--borderradius);
+        }
+
+        .boximmagini-carosello {
+            margin: 145px 0px 0px 0px;
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            animation: animazionecarosello 20s linear infinite;
+        }
     </style>
 </head>
 
@@ -218,8 +257,18 @@
                         alt="icona mano che saluta"></span>
             </div>
             <h1 class="titolo">Building digital <br> products, brands, and <br> experience.</h1>
-            <a class="ultimiarrivi" href="https://www.instagram.com/">Latest Shots <img src="immagini/external-link.png"
-                    alt="icona link esterno"></a>
+            <a class="ultimiarrivi" href="https://www.instagram.com/" target="_blank">Latest Shots <img
+                    src="immagini/external-link.png" alt="icona link esterno"></a>
+        </div>
+    </div>
+    <div class="carosello">
+        <div class="boximmagini-carosello">
+            <img src="immagini/adobe-corporate-logo-svg.webp" alt="logo addobe">
+            <img src="immagini/logo-pirelli.webp" alt="logo pirelli">
+            <img src="immagini/coca-cola-logo-svg.webp" alt="logo coca cola">
+            <img src="immagini/logo-panini.webp" alt="logo panini">
+            <img src="immagini/national-bank-of-canada-logo-wine.webp" alt="logo national bank of canada">
+            <img src="immagini/subway-logo.webp" alt="logo subway-logo">
         </div>
     </div>
     <link rel="stylesheet" href="style/style.css">
